@@ -1,7 +1,7 @@
 import { createTheme } from "@mui/material";
-import { purple, green, red, yellow } from "@mui/material/colors";
+import { purple, green, red, yellow, grey } from "@mui/material/colors";
 
-export const LightTheme = createTheme({
+export const Theme = createTheme({
   pallete: {
     primary: {
       main: purple[500],
@@ -25,6 +25,12 @@ export const LightTheme = createTheme({
       main: yellow[500],
       dark: yellow[700],
       light: yellow[300],
+      contrastText: "#000000",
+    },
+    button: {
+      main: grey[500],
+      dark: grey[700],
+      light: grey[300],
       contrastText: "#000000",
     },
   },

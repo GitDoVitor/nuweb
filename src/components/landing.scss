@@ -1,0 +1,56 @@
+@import "../utils/themes/Pallete.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-purple {
+  color: $purple;
+}
+
+.header {
+  background: none !important;
+  box-shadow: none !important;
+  // width: 100% !important;
+
+  .logo {
+    width: 44px !important;
+    height: 24px !important;
+  }
+
+  .log-out-button {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+    height: 39px;
+    width: 244px;
+    border-radius: 18px;
+    background-color: #e8e8f0 !important;
+  }
+}
+
+.purple-box {
+  background-color: $purple;
+  width: 100vw;
+  height: 128px;
+}
+
+.purple-box-account-grid-icon {
+  margin-left: 45px;
+}
+
+.grid-item {
+  background-color: $gray-with-opacity;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 25px;
+  width: 310px;
+  height: 80px;
+  font-family: "Montserrat", sans-serif !important;
+}

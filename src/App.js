@@ -1,8 +1,18 @@
+import { ThemeProvider } from "@mui/material";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Landing from "./components/landing";
+import Login from "./components/login";
+import { Theme } from "./utils/themes/Theme";
 
-function App() {
+export default function App() {
   return (
-    <h1>hello world!</h1>
+    <ThemeProvider theme={Theme}>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Login />} />
+          <Route path="/landing" element={<Landing />} />
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
-
-export default App;
