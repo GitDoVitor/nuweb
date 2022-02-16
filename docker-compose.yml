@@ -2,6 +2,6 @@ version: '3.9'
 
 services:
   nuweb:
-    image: nuweb:2.0
+    image: dockerdovitor/nuweb:2.0
     ports:
       - "9009:80"
