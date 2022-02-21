@@ -1,15 +1,9 @@
-FROM node:12.18.2 as build-stage
-RUN mkdir /usr/app
-COPY . /usr/app
-WORKDIR /usr/app
+FROM node
+WORKDIR /app
+COPY package.json .
+COPY package-lock.json .
 RUN npm ci
-
-# add `/usr/src/app/node_modules/.bin` to $PATH
-ENV PATH /usr/src/app/node_modules/.bin:$PATH
-RUN npm run build
-
-FROM nginx:alpine
-WORKDIR /usr/share/nginx/html
-RUN rm -rf ./*
-COPY --from=build-stage /usr/app/build .
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
+COPY . .
+ENV REACT_APP_API_HOST=nuweb-api
+EXPOSE 3000
+CMD ["npm", "start"]

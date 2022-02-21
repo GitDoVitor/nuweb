@@ -11,7 +11,7 @@ export default function Login() {
     <Box>
       <Container className="login-container">
         <img src={Logo} alt="logo"></img>
-        <Link to="/landing">
+        <Link to="/landing" className="link">
           <Button
             variant="contained"
             startIcon={<GitHubIcon />}
