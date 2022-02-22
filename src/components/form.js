@@ -32,7 +32,6 @@ export default function Form() {
     <Box>
       <Header />
       <Promo />
-      {process.env.REACT_APP_API_HOST}
       <Box className="box-paper" component={Paper}>
         <Container className="container">
           <TextField
