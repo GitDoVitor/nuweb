@@ -1,5 +1,7 @@
 # Iniciando o Projeto do zero
 
+# READ.ME DESATUALIZADO
+
 Para baixar a imagem docker.
 ### `docker pull dockerdovitor/nuweb:2.0`
 
