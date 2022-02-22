@@ -1,6 +1,7 @@
 # Iniciando o Projeto do zero
 
 # READ.ME DESATUALIZADO
+## Para visualizar o correto, use esse [link](https://github.com/GitDoVitor/nuweb-back)
 
 Para baixar a imagem docker.
 ### `docker pull dockerdovitor/nuweb:2.0`
