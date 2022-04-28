@@ -9,7 +9,7 @@ export default function Header() {
       <AppBar position="static" className="header">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <Link to="/landing">
+            <Link to="/">
               <img src={Logo} alt="logo" className="logo" />
             </Link>
             <Button className="log-out-button">

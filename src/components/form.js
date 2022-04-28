@@ -64,7 +64,7 @@ export default function Form() {
             id="phoneNumber"
             value={data.phoneNumber}
           />
-          <Link to="/landing">
+          <Link to="/">
             <Button
               className="button"
               variant="contained"
